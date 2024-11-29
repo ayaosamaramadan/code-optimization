@@ -109,13 +109,13 @@ a:hover {
   text-decoration: underline;
 }
 
-footer {
+/* footer {
   background-color: var(--primary-color);
   color: var(--white-color);
   text-align: center;
   padding: var(--footer-padding);
   margin-top: var(--footer-margin-top);
-}
+} */
 
 footer p {
   margin: 0;
