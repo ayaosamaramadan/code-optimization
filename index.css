@@ -16,6 +16,18 @@ body {
   color: var(--text-color);
 }
 
+.navbar-toggler {
+  @media screen and (max-width: 991px) {
+    margin-top: -55px;
+  }
+  @media (max-width: 768px) {
+    margin-top: -49px;
+  }
+  @media (max-width: 425px) {
+    margin-top: -55px;
+  }
+}
+
 header {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -40,6 +52,42 @@ ul {
   padding: 0;
 }
 
+h1 {
+  @media screen and (max-width: 991px) {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    margin-left: 5%;
+  }
+  @media (max-width: 425px) {
+    font-size: 1.2rem;
+    margin-left: 5%;
+  }
+  @media (max-width: 320px) {
+    font-size: 1.2rem;
+    margin-top: 3%;
+    margin-left: 5%;
+  }
+}
+
+.card {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 8px;
+  border: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+.card a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -108,14 +156,6 @@ a:hover {
 .sidebar ul li a:hover {
   text-decoration: underline;
 }
-
-/* footer {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  text-align: center;
-  padding: var(--footer-padding);
-  margin-top: var(--footer-margin-top);
-} */
 
 footer p {
   margin: 0;
