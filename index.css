@@ -169,7 +169,7 @@ footer p {
   right: 20px;
   z-index: 99;
   font-size: 14px;
-  border: none;
+  border: 1px solid var(--white-color);
   cursor: pointer;
   background-color: var(--primary-color);
   color: white;
@@ -179,4 +179,17 @@ footer p {
 
 #topbtn:hover {
   background-color: var(--gray-color);
+}
+footer form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer .form-control {
+  margin-bottom: 10px;
+}
+
+footer .btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
