@@ -16,6 +16,14 @@
     rgba(20, 176, 223, 1) 91%,
     rgba(0, 212, 255, 1) 100%
   );
+  --darkgradient-background: linear-gradient(
+    90deg,
+    rgba(0, 4, 36, 1) 0%,
+    rgb(73, 29, 59) 32%,
+    rgb(62, 30, 71) 58%,
+    rgb(12, 107, 136) 91%,
+    rgb(0, 105, 126) 100%
+  );
   --gradient-background-alt: linear-gradient(
     90deg,
     rgba(105, 46, 86, 1) 0%,
@@ -164,10 +172,10 @@ footer p {
   border: 1px solid var(--white-color);
   cursor: pointer;
   background: var(--gradient-background-alt);
-  color: white;
+  color:var(--white-color);
   padding: 15px;
   border-radius: 50px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;  
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 #topbtn:hover {
   background-color: var(--gray-color);
@@ -201,13 +209,61 @@ footer .btn {
   color: var(--white-color);
 }
 footer .btn:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 #navbarNav {
   background: inherit;
 }
 img:hover {
-  transform: scale(1.01); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+}
+
+header.dark-mode {
+  background: var(--darkgradient-background);
+}
+
+footer.dark-mode {
+  background: var(--darkgradient-background);
+}
+.card.dark-mode {
+  background-color: #1a1a1a;
+  border: 1px solid #afafaf46;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card.dark-mode a{
+  color: #000000cb;
+  font-weight: 500;
+}
+
+.card.dark-mode:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+aside.dark-mode div{
+  background-color: #1a1a1a;
+  border: 1px solid #afafaf46;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+.darkbtn {
+  position: absolute;
+  outline: none;
+  right: 34px;
+  top :19px;
+  font-size: 14px;
+  border: 1px solid #ffffff46;
+  cursor: pointer;
+  background-color: inherit;
+  color: var(--white-color);
+  padding: 7px 14px; 
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }

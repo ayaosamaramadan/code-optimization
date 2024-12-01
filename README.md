@@ -7,9 +7,9 @@ Modern and responsive blog website designed to showcase articles, images, and co
 
 - **index.html**: The main HTML file.
 - **css/**: Directory containing CSS files.
-  - **style.css**: Main stylesheet.
+  - **index.css**: Main stylesheet.
 - **js/**: Directory containing JavaScript files.
-  - **script.js**: Main JavaScript file.
+  - **index.js**: Main JavaScript file.
 - **bootstrap/**: Directory containing Bootstrap files.
 - **images/**: Directory containing image files.
 
