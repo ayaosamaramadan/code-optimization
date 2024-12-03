@@ -1,4 +1,4 @@
-# Code Optimization
+#⚙ Code Optimization
 
 ## Overview
 Modern and responsive blog website designed to showcase articles, images, and contact information. The project utilizes HTML, CSS, and JavaScript along with libraries Bootstrap and Font Awesome to create a visually appealing and user-friendly interface.
